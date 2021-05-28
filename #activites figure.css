@@ -1,0 +1,74 @@
+#activites figure
+{
+	display:flex;
+	flex-direction: column;
+	align-items: stretch;
+	border-radius: 1.5rem;
+	padding: 0;
+	margin: 0;
+
+}
+
+
+#activites button                              
+{
+	background-color: white;
+	border: none;
+	border-radius: 1.5rem;
+	padding: 0;
+	box-shadow: 0 0 16px #0000002e;
+}
+.grande_img button
+{
+	height: 45rem;
+	width: 26rem;
+}
+
+.petite_img button
+{
+	height: 12rem;
+	width: 25rem;
+}
+.petite_img
+{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+#b1 
+{
+	position: relative;
+	bottom: 40%;
+}
+
+#b2 
+{
+	position:relative;
+	top: 50%;
+}
+
+#grille
+{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	width: 100%;
+}
+
+.petite_img img
+{
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	object-fit: cover;
+	height: 80%;
+	width: 100%;
+}
+
+.grande_img img
+{
+	border-radius: 1.5rem 1.5rem 0rem 0rem;
+	object-fit: none;
+	height: 80%;
+	width: 100%;
+}
+
