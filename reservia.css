@@ -22,50 +22,6 @@ main
 	margin: 3%;
 }
 
-/*#bloc_page
-{
-	width: 100%;
-	margin: 0;
-	display: grid;
-	grid-template-rows: 10rem 30rem 65rem 55rem 22rem;
-	grid-template-columns: 88rem 42rem;
-	row-gap: 1rem;
-	column-gap: 4rem
-}
-
-header
-{
-	grid-column: 1/-1;
-}
-#section_filtres
-{
-	grid-column: 1/-1;
-}
-
-#hebergements
-{
-	grid-row:3/4;
-	grid-column: 1/2;
-}
-
-#populaires
-{
-	grid-row: 3/4;
-	grid-column: 2/3;
-}
-
-#activites
-{
-	grid-row: 4/5;
-	grid-column:1/-1;
-}
-
-footer
-{
-	grid-row: 5/6;
-	grid-column: 1/-1;
-}*/
-
 /*Header*/
 header
 {
@@ -104,7 +60,6 @@ body
 	background: white;
 	font-family: 'Raleway-SemiBold';
 	color: #181818;
-	font-weight: bold;
 }
 
 nav ul
@@ -124,12 +79,12 @@ nav a
 
 h1, h2
 {
-	font-size: 1.8rem;
+	font-size:2.4rem;
 }
 
 #section_filtres
 {
-	line-height: 1rem;
+	line-height: 2rem;
 }
 
  form i  /*mapmarker*/
@@ -144,7 +99,7 @@ h1, h2
 section p /*polices des paragraphes*/
 {
 	font-family: 'Raleway-Light';
-	font-weight: normal;
+	font-size: medium;
 }
 
 #lieu  /*zone de texte de recherche*/
@@ -246,7 +201,6 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 	justify-content: space-between;
 	height: auto;
 	width: 100%;
-	/*margin:3rem auto;*/
 }
 
 #hebergements    /*fond gris pour les images de la section 'hébergements à Marseille' + arrondir la bordure*/
@@ -261,7 +215,7 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 
 #hebergements button
 {
-	width: 30%;
+	width: 28%;
 	margin: 1.5% 1.5%;
 	border-radius: 1.5rem;
 	padding:0;
@@ -269,11 +223,6 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 	border: 3px solid white;
 	box-shadow: 0 0 16px #0000002e;
 }
-
-/*#hebergemnts div
-{
-	width:33%;
-}*/
 
 #hebergements img
 {
@@ -308,7 +257,10 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 	flex-direction: column;
 	width: 100%;
 	height: auto;
+	padding: 2%;
+
 }
+
 
 #titre_graph /*Titre "Les plus populaires" + icone */
 {
@@ -322,11 +274,11 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 
 #populaires figcaption
 {
-	line-height: 2.5rem;
 	width: 40%;
+	height: 90%;
 	display: flex;
 	flex-direction: column;
-	align-items:flex-start;
+	justify-content: space-between;
 }
 
 
@@ -341,8 +293,8 @@ form  /* formulaire de la barre de recherche; contenant mapmarker, zone de texte
 #populaires button  
 {
 	border-radius: 1.5rem;
-	width: 80%;
-	height: 14rem;
+	width: 75%;
+	height: 13rem;
 	padding:0;
 	margin: 1rem auto;
 	background-color: white;
