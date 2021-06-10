@@ -103,8 +103,6 @@ h3
 
 }
 
-/*polices des paragraphes*/
-
 #premier_paragraphe, #info
 {
 	font-family: 'Raleway-Light';
@@ -131,7 +129,7 @@ section p /*polices des paragraphes*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
+
 }
 
 #lieu  /*La zone de texte du formulaire (Marseille, France) */
@@ -143,7 +141,7 @@ section p /*polices des paragraphes*/
     border-right: none;
 	padding-left: 0.5rem;
 	font-size: initial;
-	
+
 }
 
 .search    /*bouton bleu Recherche*/
@@ -252,88 +250,7 @@ form
 	height: auto;
 	width: 100%;
 	margin-top: 2.5vw;
-	margin-bottom: 3.5vw;
 }
-
-#hebergements    /*fond gris pour les images de la section 'hébergements à Marseille' + arrondir la bordure*/
-{
-	background-color: #F2F2F2;
-	border-radius: 1rem;
-	padding-bottom: 3rem;
-	height: auto;
-	width: 70%;
-	margin-right: 4%;
-	
-}
-#afficher_plus
-{
-	font-family:'Raleway-SemiBold' ;
-	font-weight: bold;
-    font-size: 2rem;
-    margin-left: 2rem;
-}
-#afficher_plus:hover
-{
-	color:#0065FC;
-}
-
-body span, #activites figcaption
-{
-	font-family: 'Raleway-SemiBold';
-	font-size: 1.4rem;
-}
-
- #hebergements h2
- {
-	margin: 2.5vw 0 1.2vw 3.2vw;
- }
-
-#bloc_boutons_hebergements
-{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin: 2rem auto;
-}
-
-#hebergements .bouton_image
-{
-	width: 28%;
-    height: 19rem;
-	margin: 1.5%;
-	border-radius: 1.7rem;
-	background-color: white;
-	border: 0.5rem solid white;
-	box-shadow: 0 0 16px #0000002e;
-
-}
-
-#hebergements img
-{
-	object-fit: cover;
-	width: 100%;
-	height: 59%;
-	border-radius: 1.5rem 1.5rem 0rem 0rem;
-}
-#hebergements figure
-{
-	border-radius: 1.5rem;
-	padding: 0;
-	margin: 0;
-	width: 100%;
-    height: 100%;
-
-}
-#hebergements figcaption
-{
-	text-align: left;
-	font-family: 'Raleway-SemiBold';
-	font-size: 1.24rem;
-	padding: 0.3rem;
-
-}
-
 #hebergements p, #populaires p
 {
 	margin-top: 0.5rem;
@@ -378,10 +295,6 @@ body span, #activites figcaption
 	justify-content: space-around;
 	text-align: left;
 	font-size: 1.24rem;
-}
-#populaires h3
-{
-	font-family: 'Raleway-SemiBold';
 }
 
 
@@ -892,13 +805,3 @@ footer div
 }
 }
 
-
-
-
-
-
-
-
-
-
-}
