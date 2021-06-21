@@ -144,6 +144,11 @@ section p /*polices des paragraphes*/
 	width: 70%;
 
 }
+input:focus-visible
+{
+	outline: none;
+}
+
 
 .search    /*bouton bleu Recherche*/
 {
@@ -170,7 +175,7 @@ form
 {
 	display: inline-flex;
 	height: 5rem;
-	padding-right: 0.5rem;
+	padding-right: 1rem;
 
 }
 
@@ -239,7 +244,19 @@ form
 #filtres button:hover
 {
 	background-color: #DEEBFF;
+	color:#0065FC;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
 }
+
+/*button:hover
+{
+	color:#0065FC;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
+}*/
 
 #info i     /*icone info en dessous des filtres*/ 
 {
@@ -271,7 +288,7 @@ form
 }
 #hebergements h2
 {
-	margin: 3rem 4rem 2.5rem;
+	margin: 3rem 2rem 2.5rem;
 }
 
 #bloc_boutons_hebergements
@@ -309,7 +326,7 @@ form
 	border-radius: 1.5rem 1.5rem 0 0;
 }
 
-#hebergements figcaption
+#hebergements figcaption, #hebergements .figcaption
 {
 	text-align: left;
 	font-family: 'Raleway-SemiBold';
@@ -324,7 +341,7 @@ form
 	margin-left: 4rem;
 }
 
-#afficher_plus:hover
+#afficher_plus:hover, .figcaption:hover, #activites h3:hover
 {
 	color: #0065FC;
 }
@@ -345,7 +362,7 @@ form
 
 }
 
-#titre_graph+div
+#titre_graph + div
 {
 	display: flex;
 	flex-direction: column;
@@ -363,10 +380,20 @@ form
 	font-family: 'Raleway-SemiBold';
 	font-size: 2rem;
 	padding-top: 1.4rem;
-	margin-right: 6rem;
 }
 
-#populaires figcaption
+/*#populaires figcaption
+{
+	width: 45%;
+	height: 95%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: left;
+	font-size: 1.3rem;
+}*/
+
+#populaires .figcaption
 {
 	width: 45%;
 	height: 95%;
@@ -376,6 +403,7 @@ form
 	text-align: left;
 	font-size: 1.3rem;
 }
+
 
 
 #populaires img
@@ -388,7 +416,7 @@ form
 	padding-right: 1rem;
 }
 
-#populaires .bouton_image 
+#populaires a
 {
 	display: inline-block;
 	border-radius: 2rem;
@@ -399,6 +427,7 @@ form
 	margin-bottom: 2rem;
 	background-color: white;
 	box-shadow: 0 0 16px #0000002e;
+	border: none;
 }
 
 
@@ -411,15 +440,7 @@ form
 	width: 100%;
 }
 
-button:hover
-{
-	color:#0065FC;
-	transition-duration: 0.2s;
-	cursor: pointer;
-	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
-}
-
-.bouton_image:hover, #grille div:hover
+.bouton_image:hover, #grille div:hover, #grille a:hover
 {
 	color:#0065FC;
 	transition-duration: 0.3s;
@@ -439,11 +460,11 @@ button:hover
 	color:#d5d1d1;
 }
 
-#activites
+/*#activites
 {
 	height: auto;
 	width: 100%;
-}
+}*/
 
 #grille
 {
@@ -485,22 +506,15 @@ button:hover
 	grid-column: 4/5;
 }
 
-#grille div                           
+#grille div, #grille a                           
 {
 	background-color: white;
 	border: none;
 	border-radius: 2rem;
 	padding: 0;
 	box-shadow: 0 0 1.6rem #0000002e;
-	width: 100%;
+	width: auto;
 	height: auto;
-}
-
-#grille figure
-{
-	border-radius: 2rem;
-	margin: 0;
-	height: 100%;
 }
 
 #grille img
@@ -513,10 +527,8 @@ button:hover
 
 
 
-#activites figcaption
+#activites h3
 {
-	border-radius: 2rem;
-	height:5.7rem;
 	padding-top: 1rem;
 	padding-left: 1rem;
 	font-size: 1.3rem;
@@ -729,6 +741,37 @@ main
 	width: 100%;
 	height: auto;
 }
+#populaires 
+{
+	border-radius: 0;
+}
+
+#populaires .bouton_image
+{
+	width: 90%;
+	margin-bottom: 1rem;
+}
+
+#hebergements .bouton_image
+{
+	height: 18rem;
+	width: 90%;
+	padding-bottom: 1%;
+}
+#hebergements img 
+{
+	height: 12rem;
+}
+
+#hebergements, #activites 
+{
+	margin:0;
+	background: none;
+}
+
+#activites h2{
+	margin-left:2rem;
+}
 
 #grille
 {
@@ -738,23 +781,13 @@ main
 	justify-content: center;
 	align-items: center;	
 }
-#grille div
+#grille div, #grille a
 {
 	margin:1.5rem;
 	height: 20rem;
 	width: 90%;
 }
-#populaires .bouton_image, #hebergements .bouton_image
-{
-	height: 15rem;
-	width: 90%;
-}
 
-#hebergements, #activites 
-{
-	margin:0;
-	background: none;
-}
 
 footer 
 {
@@ -769,8 +802,8 @@ header
 	margin-top:1rem;
 }
 
-main {
-	width: 100%;
+main 
+{
 	margin: 0;
 	padding: 0;
 }
@@ -778,20 +811,6 @@ main {
 #section_filtres
 {
 	margin-left: 2rem;
-}
-
-#populaires
-{
-	width: 95%;
-	padding-bottom: 3rem;
-	margin-bottom: 2rem;
-}
-
-#hebergements 
-{
-	width: 95%;
-	margin-bottom: 2rem;
-	margin-right: 0;
 }
 
 #sections_hebergements
@@ -802,6 +821,13 @@ main {
 	margin: 0 auto;
 	padding-right: 1rem;
 	padding-left: 1rem;
+}
+
+#populaires
+{
+	width: 95%;
+	padding-bottom: 3rem;
+	margin-bottom: 2rem;
 }
 
 #titre_graph
@@ -815,7 +841,7 @@ main {
 	margin-right: 6rem;
 }
 
-#titre_graph+div
+#titre_graph + div
 {
 	flex-direction: row;
 	justify-content: center;
@@ -844,12 +870,21 @@ main {
 {
 	height:55%;
 	width: 100%;
+	padding:0;
 	border-radius: 1.7rem 1.7rem 0 0;
 }
 
 #populaires p
 {
 	margin: 0;
+}
+
+#hebergements 
+{
+	width: 95%;
+	margin-bottom: 2rem;
+	margin-right: 0;
+	padding-bottom: 2rem;
 }
 
 #grille
@@ -862,17 +897,17 @@ main {
 	margin: 1rem;
 }
 
-#grille  div
+#grille  div, #grille a
 {
 	width: 43%;
 	height: 25rem;
 	margin-bottom:3.5%;
 }
 
-#activites 
+/*#activites 
 {
 	margin
-}
+}*/
 
 #activites h2 
 {
