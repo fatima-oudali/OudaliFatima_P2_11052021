@@ -53,7 +53,6 @@ header
 	color: #0065FC;
 	font-weight: bold;
 	font-size: 1.7rem;
-
 }
 
 
@@ -159,9 +158,10 @@ input:focus-visible
 	border-radius: 0rem 1.5rem 1.5rem 0rem;
 	padding: 1.7rem 1.9rem 1.7rem 1.9rem;
 }
-.search:hover
+.search:hover, #loupe:hover
 {
-	transition-duration: 0.2s;
+	/*transform: scale(1.01);*/
+	transition-duration: 0.3s;
 	cursor: pointer;
 	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
 }
@@ -220,6 +220,17 @@ form
 	height: 4.6rem;
 	padding-right: 1.3rem;
 }
+
+#filtres button:hover
+{
+	background-color: #DEEBFF;
+	color:#0065FC;
+	cursor: pointer;
+	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
+	transform: scale(1.05);
+	transition-duration: 0.2s;
+}
+
 .filter
 {
 	display: inline-flex;
@@ -239,15 +250,6 @@ form
 	background-color: #DEEBFF;
 	margin-right: 1rem;
 
-}
-
-#filtres button:hover
-{
-	background-color: #DEEBFF;
-	color:#0065FC;
-	transition-duration: 0.2s;
-	cursor: pointer;
-	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
 }
 
 /*button:hover
@@ -301,23 +303,15 @@ form
 
 #hebergements .bouton_image
 {
-	width: 27%;
+	width: 28%;
 	height: 19rem;
 	border-radius: 1.7rem;
-	margin: 1.5%;
+	margin: 1%;
 	background-color: white;
 	border: 0.5rem solid transparent;
 	box-shadow: 0 0 1.6rem #0000002e;
 }
 
-#hebergements figure
-{
-	width: 100%;
-	height: 100%;
-	margin:0;
-	padding: 0;
-	border-radius: 1.5rem;
-}
 #hebergements img
 {
 	object-fit: cover;
@@ -326,7 +320,7 @@ form
 	border-radius: 1.5rem 1.5rem 0 0;
 }
 
-#hebergements figcaption, #hebergements .figcaption
+#hebergements .figcaption
 {
 	text-align: left;
 	font-family: 'Raleway-SemiBold';
@@ -382,17 +376,6 @@ form
 	padding-top: 1.4rem;
 }
 
-/*#populaires figcaption
-{
-	width: 45%;
-	height: 95%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	text-align: left;
-	font-size: 1.3rem;
-}*/
-
 #populaires .figcaption
 {
 	width: 45%;
@@ -440,13 +423,14 @@ form
 	width: 100%;
 }
 
-.bouton_image:hover, #grille div:hover, #grille a:hover
+.bouton_image:hover, #grille a:hover
 {
 	color:#0065FC;
 	transition-duration: 0.3s;
 	cursor: pointer;
 	box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem grey;
 	transform: scale(1.05);
+	transition-duration: 0.3s;
 
 }
 
@@ -460,11 +444,6 @@ form
 	color:#d5d1d1;
 }
 
-/*#activites
-{
-	height: auto;
-	width: 100%;
-}*/
 
 #grille
 {
@@ -688,6 +667,7 @@ main
 	display: flex;
 	flex-direction: column;
 	margin-left: 2rem;
+	margin-right:1rem;
 }
 
 #filtres
@@ -795,7 +775,7 @@ footer
 }
 }
 
-@media all and (min-width: 767px) and (max-width: 991px){
+@media all and (min-width: 767px) and (max-width: 1000px){
 
 header
 {
@@ -851,12 +831,12 @@ main
 
  #populaires .bouton_image
  {
-	width: 30vw;
-    height: 23vw;
-	margin: 1.5%;
+	width: 28%;
+    height: 19rem;
+	margin: 1%;
  }
 
-#populaires figcaption
+#populaires .figcaption
 {
 	width: 100%;
 	height: 43%;
@@ -903,11 +883,6 @@ main
 	height: 25rem;
 	margin-bottom:3.5%;
 }
-
-/*#activites 
-{
-	margin
-}*/
 
 #activites h2 
 {
