@@ -99,7 +99,7 @@ h3
 {
 	font-family: 'Raleway-SemiBold';	
 	margin: 0;
-
+	font-size: 1.5rem;
 }
 
 #premier_paragraphe, #info
@@ -251,14 +251,6 @@ form
 	margin-right: 1rem;
 
 }
-
-/*button:hover
-{
-	color:#0065FC;
-	transition-duration: 0.2s;
-	cursor: pointer;
-	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
-}*/
 
 #info i     /*icone info en dessous des filtres*/ 
 {
@@ -510,7 +502,6 @@ form
 {
 	padding-top: 1rem;
 	padding-left: 1rem;
-	font-size: 1.3rem;
 }
 
 /*Footer */
