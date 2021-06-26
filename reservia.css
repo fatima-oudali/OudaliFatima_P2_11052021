@@ -163,7 +163,7 @@ input:focus-visible
 	/*transform: scale(1.01);*/
 	transition-duration: 0.3s;
 	cursor: pointer;
-	box-shadow: 0.3rem 0.2rem 0.3rem 0.2rem grey;
+	box-shadow: 0.3rem 0.3rem 1rem grey;
 }
 #loupe
 {
