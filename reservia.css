@@ -244,7 +244,7 @@ form
 #filtres i /* Icons: economical family romantic animals */
 {
 	color: #0065FC;
-	border: 0.2rem solid #DEEBFF;
+	border: 0.2rem solid transparent;
 	border-radius: 5rem;
 	padding: 1.2rem;
 	background-color: #DEEBFF;
