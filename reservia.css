@@ -518,6 +518,10 @@ footer
 	margin:0;
 }
 
+footer h3 {
+	font-size: large;
+}
+
 footer ul
 {
 	list-style-type: none;
